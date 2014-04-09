@@ -1,0 +1,7 @@
+---
+baseurl: "http://blog.hugoexample.com/"
+title: "Hugo Example Blog"
+canonifyurls: true
+params:
+  devmode: false
+---
