@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Blog on Hugo Example Blog </title>
+    <link>http://tehbilly.com/hugo-example-blog/tags/blog/index.xml</link>
+    <language>en-US</language>
+    <author>Enthusiastic Hugo User</author>
+    <rights>Copyright (c) 2014, Enthusiastic Hugo User; all rights reserved.</rights>
+    <updated>Tue, 08 Apr 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Hello Hugo!</title>
+      <link>http://tehbilly.com/hugo-example-blog/post/hello-hugo</link>
+      <pubDate>Tue, 08 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Enthusiastic Hugo User</author>
+      <guid>http://tehbilly.com/hugo-example-blog/post/hello-hugo</guid>
+      <description>
+
+&lt;p&gt;Hello from Hugo! If you&amp;rsquo;re reading this in your browser, good job! The file &lt;code&gt;content/post/hello-hugo.md&lt;/code&gt; has been
+converted into a complete html document by Hugo. Isn&amp;rsquo;t that pretty nifty?&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;A Section&lt;/h2&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a simple titled section where you can place whatever information you want.&lt;/p&gt;
+
+&lt;p&gt;You can use inline HTML if you want, but really there&amp;rsquo;s not much that markdown can&amp;rsquo;t do.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Showing Off With Markdown&lt;/h2&gt;
+
+&lt;p&gt;A full cheat sheet can be found &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;here&lt;/a&gt;
+or through &lt;a href=&#34;https://google.com/&#34;&gt;google&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are some &lt;em&gt;easy&lt;/em&gt; examples for styling, though. I can&amp;rsquo;t &lt;strong&gt;emphasize&lt;/strong&gt; that enough.
+Creating &lt;a href=&#34;https://google.com/&#34;&gt;links&lt;/a&gt; or &lt;code&gt;inline code&lt;/code&gt; blocks are very straightforward.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;There are some *easy* examples for styling, though. I can&#39;t **emphasize** that enough.
+Creating [links](https://google.com/) or `inline code` blocks are very straightforward.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Front Matter For Fun&lt;/h2&gt;
+
+&lt;p&gt;This is the meta data for this post. It is located at the top of the &lt;code&gt;content/post/hello-hugo.md&lt;/code&gt; markdown file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;Hello Hugo!&amp;quot;
+description: &amp;quot;Saying &#39;Hello&#39; from Hugo&amp;quot;
+date: &amp;quot;2014-04-09&amp;quot;
+categories:
+  - &amp;quot;example&amp;quot;
+  - &amp;quot;hello&amp;quot;
+tags:
+  - &amp;quot;example&amp;quot;
+  - &amp;quot;hugo&amp;quot;
+  - &amp;quot;blog&amp;quot;
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This section, called &amp;lsquo;Front Matter&amp;rsquo;, is what tells Hugo about the content in this file. The title of the item,the
+description, the date it was posted. In our example we&amp;rsquo;re adding two custom bits of data, too. The &lt;code&gt;categories&lt;/code&gt; and
+&lt;code&gt;tags&lt;/code&gt; sections are used in this example for indexing/grouping content. You will learn more about what that means by
+examining the code in this example and through reading the Hugo &lt;a href=&#34;http://hugo.spf13.com/overview/introduction&#34;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
