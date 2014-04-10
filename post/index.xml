@@ -6,109 +6,256 @@
     <language>en-US</language>
     <author>Enthusiastic Hugo User</author>
     <rights>Copyright (c) 2014, Enthusiastic Hugo User; all rights reserved.</rights>
-    <updated>Wed, 09 Apr 2014 00:00:00 UTC</updated>
+    <updated>Fri, 11 Apr 2014 00:00:00 UTC</updated>
     
     <item>
-      <title>Another Hugo Post</title>
-      <link>http://tehbilly.com/hugo-example-blog/post/another-post</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 UTC</pubDate>
+      <title>Step One: Hugo Introduction</title>
+      <link>http://tehbilly.com/hugo-example-blog/post/step-one-hello-hugo</link>
+      <pubDate>Fri, 11 Apr 2014 00:00:00 UTC</pubDate>
       <author>Enthusiastic Hugo User</author>
-      <guid>http://tehbilly.com/hugo-example-blog/post/another-post</guid>
+      <guid>http://tehbilly.com/hugo-example-blog/post/step-one-hello-hugo</guid>
       <description>
 
-&lt;h2 id=&#34;toc_0&#34;&gt;TOML, YAML, JSON - Oh my!&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Hello!&lt;/h2&gt;
 
-&lt;p&gt;One of the nifty Hugo features we should cover: flexible configuration and front matter formats! This entry has front
-matter in &lt;code&gt;toml&lt;/code&gt;, unlike the last one which used &lt;code&gt;yaml&lt;/code&gt;, and &lt;code&gt;json&lt;/code&gt; is also available if that&amp;rsquo;s your preference.&lt;/p&gt;
+&lt;p&gt;Hello from Hugo! If you&amp;rsquo;re reading this in your browser, good job! The file
+&lt;code&gt;content/post/step-one-hello-hugo.md&lt;/code&gt; has been converted into a complete html
+document by Hugo. Isn&amp;rsquo;t that pretty nifty?&lt;/p&gt;
 
-&lt;p&gt;The &lt;code&gt;toml&lt;/code&gt; front matter used on this entry:&lt;/p&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;What is Hugo?&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code&gt;+++
-title = &amp;quot;Another Hugo Post&amp;quot;
-description = &amp;quot;Nothing special, but one post is boring.&amp;quot;
-date = &amp;quot;2014-04-09&amp;quot;
-categories = [ &amp;quot;example&amp;quot;, &amp;quot;configuration&amp;quot; ]
-tags = [
-    &amp;quot;example&amp;quot;,
-    &amp;quot;hugo&amp;quot;,
-    &amp;quot;toml&amp;quot;
-]
-+++
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hugo is a static site generator written in &lt;a href=&#34;http://golang.org&#34;&gt;go&lt;/a&gt;. It is ideal for
+creating fast, seldom-changing sites. The program is portable and has zero
+dependencies, and the sites it generates are easy to publish.&lt;/p&gt;
 
-&lt;p&gt;This flexibility also extends to your site&amp;rsquo;s global configuration file. You&amp;rsquo;re free to use any format you prefer, simply
-name the file &lt;code&gt;config.yaml&lt;/code&gt;, &lt;code&gt;config.toml&lt;/code&gt;, or &lt;code&gt;config.json&lt;/code&gt; and go on your merry way.&lt;/p&gt;
+&lt;p&gt;A common use case for static site generators has been making blogs. Then again,
+you probably already know this. Why else would you be here? There are several
+applications that have filled this niche over the years (&lt;a href=&#34;http://jekyllrb.com&#34;&gt;jekyll&lt;/a&gt;,
+&lt;a href=&#34;http://nanoc.ws&#34;&gt;nanoc&lt;/a&gt;, etc.), but hugo aims to be a little more portable and easy to use.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;JSON Example&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;What is This? Where am I?&lt;/h2&gt;
 
-&lt;p&gt;How would this entry&amp;rsquo;s front matter look in &lt;code&gt;json&lt;/code&gt;? That&amp;rsquo;s easy enough to demonstrate:&lt;/p&gt;
+&lt;p&gt;Calm down, you&amp;rsquo;re just in the &lt;code&gt;hugo-example-blog&lt;/code&gt; repository. Nothing scary
+going on here. Our goal is to help ease learning curve of making a statically
+generated blog and provide a simple, easy to understand template to base your
+own site off of.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;{
-    &amp;quot;title&amp;quot;: &amp;quot;Another Hugo Post&amp;quot;,
-    &amp;quot;description&amp;quot;: &amp;quot;Nothing special, but one post is boring.&amp;quot;,
-    &amp;quot;date&amp;quot;: &amp;quot;2014-04-09&amp;quot;,
-    &amp;quot;categories&amp;quot;: [ &amp;quot;example&amp;quot;, &amp;quot;configuration&amp;quot; ],
-    &amp;quot;tags&amp;quot;: [
-        &amp;quot;example&amp;quot;,
-        &amp;quot;hugo&amp;quot;,
-        &amp;quot;toml&amp;quot;
-    ],
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By the end of the next few posts you should have a good understanding of the
+basics of Hugo and be well on your way to creating your own site!&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Hello Hugo!</title>
-      <link>http://tehbilly.com/hugo-example-blog/post/hello-hugo</link>
-      <pubDate>Tue, 08 Apr 2014 00:00:00 UTC</pubDate>
+      <title>Step Two: First Steps</title>
+      <link>http://tehbilly.com/hugo-example-blog/post/step-two-site-configuration</link>
+      <pubDate>Thu, 10 Apr 2014 00:00:00 UTC</pubDate>
       <author>Enthusiastic Hugo User</author>
-      <guid>http://tehbilly.com/hugo-example-blog/post/hello-hugo</guid>
+      <guid>http://tehbilly.com/hugo-example-blog/post/step-two-site-configuration</guid>
       <description>
 
-&lt;p&gt;Hello from Hugo! If you&amp;rsquo;re reading this in your browser, good job! The file &lt;code&gt;content/post/hello-hugo.md&lt;/code&gt; has been
-converted into a complete html document by Hugo. Isn&amp;rsquo;t that pretty nifty?&lt;/p&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Configuration&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;A Section&lt;/h2&gt;
+&lt;p&gt;The first thing you&amp;rsquo;ve got to do with your new site is &lt;em&gt;configure&lt;/em&gt; it. You can
+do so by opening &lt;code&gt;config.yaml&lt;/code&gt; in the base directory of the repository and
+changing a few variables. Here&amp;rsquo;s the content of the provided &lt;code&gt;config.yaml&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;Here&amp;rsquo;s a simple titled section where you can place whatever information you want.&lt;/p&gt;
-
-&lt;p&gt;You can use inline HTML if you want, but really there&amp;rsquo;s not much that markdown can&amp;rsquo;t do.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_1&#34;&gt;Showing Off With Markdown&lt;/h2&gt;
-
-&lt;p&gt;A full cheat sheet can be found &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;here&lt;/a&gt;
-or through &lt;a href=&#34;https://google.com/&#34;&gt;google&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There are some &lt;em&gt;easy&lt;/em&gt; examples for styling, though. I can&amp;rsquo;t &lt;strong&gt;emphasize&lt;/strong&gt; that enough.
-Creating &lt;a href=&#34;https://google.com/&#34;&gt;links&lt;/a&gt; or &lt;code&gt;inline code&lt;/code&gt; blocks are very straightforward.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;There are some *easy* examples for styling, though. I can&#39;t **emphasize** that enough.
-Creating [links](https://google.com/) or `inline code` blocks are very straightforward.
+&lt;pre&gt;&lt;code class=&#34;yaml&#34;&gt;---
+baseurl: &amp;quot;http://blog.hugoexample.com/&amp;quot;
+title: &amp;quot;Hugo Example Blog&amp;quot;
+canonifyurls: true
+indexes:
+  category: &amp;quot;categories&amp;quot;
+  tag: &amp;quot;tags&amp;quot;
+---
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Front Matter For Fun&lt;/h2&gt;
+&lt;p&gt;At a minimum you&amp;rsquo;ll want to change the value of &lt;code&gt;baseurl&lt;/code&gt; and &lt;code&gt;title&lt;/code&gt;, although
+you don&amp;rsquo;t have to do so just yet. Later on in this series we&amp;rsquo;ll instruct you to
+change these values before you deploy, however you should understand that the
+configuration file is an extremely important part of your site.&lt;/p&gt;
 
-&lt;p&gt;This is the meta data for this post. It is located at the top of the &lt;code&gt;content/post/hello-hugo.md&lt;/code&gt; markdown file.&lt;/p&gt;
+&lt;p&gt;Take a minute to glance over the Hugo documentation on
+&lt;a href=&#34;http://hugo.spf13.com/overview/configuration&#34;&gt;configuration&lt;/a&gt; before the next step.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;---
-title: &amp;quot;Hello Hugo!&amp;quot;
-description: &amp;quot;Saying &#39;Hello&#39; from Hugo&amp;quot;
-date: &amp;quot;2014-04-09&amp;quot;
+&lt;h2 id=&#34;toc_1&#34;&gt;Running and Viewing the Site&lt;/h2&gt;
+
+&lt;p&gt;Since you installed Hugo in the first step &lt;em&gt;(you did install it, didn&amp;rsquo;t you?)&lt;/em&gt;
+you should get Hugo running in server mode so you can view changes to the
+site as you make them. From a command line navigate to the base directory of
+this repository and run &lt;code&gt;hugo server -w&lt;/code&gt;. This will start Hugo in server mode
+and rebuild the site whenever you make changes.&lt;/p&gt;
+
+&lt;p&gt;Go ahead, try it out! When it&amp;rsquo;s running you can visit [&lt;a href=&#34;http://localhost:1313](&#34;&gt;http://localhost:1313](&lt;/a&gt;)
+to see your copy of the site.&lt;/p&gt;
+
+&lt;p&gt;Whenever you&amp;rsquo;re following along with this example, or you&amp;rsquo;re working on your
+site in the future, it&amp;rsquo;s recommended you use Hugo&amp;rsquo;s server mode to get fast
+feedback on what you&amp;rsquo;re doing.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Step Three: Creating New Content</title>
+      <link>http://tehbilly.com/hugo-example-blog/post/step-three-new-content</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Enthusiastic Hugo User</author>
+      <guid>http://tehbilly.com/hugo-example-blog/post/step-three-new-content</guid>
+      <description>
+
+&lt;p&gt;So all of that is really wonderful, but I know why you&amp;rsquo;re here. You want to
+create your &lt;em&gt;own&lt;/em&gt; content, right? This post will walk you through doing
+exactly that.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Creating The File&lt;/h2&gt;
+
+&lt;p&gt;Take your favorite text editor and create a new file at
+&lt;code&gt;content/post/my-first-post.md&lt;/code&gt;. Inside of there you&amp;rsquo;ll want to define the
+properties of your post. First, paste the following at the very top of the
+file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;yaml&#34;&gt;---
+title: &amp;quot;Post Title&amp;quot;
+description: &amp;quot;This is a description&amp;quot;
+date: &amp;quot;2014-04-12&amp;quot;
 categories:
-  - &amp;quot;example&amp;quot;
-  - &amp;quot;hello&amp;quot;
+  - &amp;quot;tutorial&amp;quot;
 tags:
   - &amp;quot;example&amp;quot;
   - &amp;quot;hugo&amp;quot;
   - &amp;quot;blog&amp;quot;
+  - &amp;quot;custom&amp;quot;
 ---
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This section, called &amp;lsquo;Front Matter&amp;rsquo;, is what tells Hugo about the content in this file. The title of the item,the
-description, the date it was posted. In our example we&amp;rsquo;re adding two custom bits of data, too. The &lt;code&gt;categories&lt;/code&gt; and
-&lt;code&gt;tags&lt;/code&gt; sections are used in this example for indexing/grouping content. You will learn more about what that means by
-examining the code in this example and through reading the Hugo &lt;a href=&#34;http://hugo.spf13.com/overview/introduction&#34;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This defines your post. How links are formatted, where it&amp;rsquo;s placed, what it&amp;rsquo;s
+related to; everything is defined in those few lines of &lt;a href=&#34;http://hugo.spf13.com/content/front-matter&#34;&gt;front matter&lt;/a&gt;. None
+of this is included in your final page, it is only used by hugo at build time
+to generate the final pages properly. Most of these should be pretty self
+explanatory, so modify the values as you see fit and let&amp;rsquo;s get to writing the
+content!&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Adding Some Meat&lt;/h2&gt;
+
+&lt;p&gt;Below the front matter you can start writing your post however you see fit.
+You can use plain text, which will be plain but perfectly readable. You
+&lt;em&gt;ideally&lt;/em&gt; will use &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;markdown&lt;/a&gt; to write your content as it is concise,
+expressive, and Hugo will generate gorgeous HTML from it.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Bask&lt;/h2&gt;
+
+&lt;p&gt;Save your file and point your browser to [&lt;a href=&#34;http://localhost:1313](&#34;&gt;http://localhost:1313](&lt;/a&gt;) &lt;em&gt;(assuming
+you still have Hugo running in server mode)&lt;/em&gt;. Your post should appear at the
+top of the index! Click on it to see the content view. Browse around the
+categories and tags to see how it&amp;rsquo;s been added to those. No muss, no fuss.&lt;/p&gt;
+
+&lt;p&gt;Continue adding to your new post and playing around with it. Create two or
+three more posts of different types and have a blast. There&amp;rsquo;s no time limit or
+anything, knock yourself out. This &lt;em&gt;is&lt;/em&gt; why you&amp;rsquo;re here!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Step Four: Organizing Content</title>
+      <link>http://tehbilly.com/hugo-example-blog/post/step-four-organizing-content</link>
+      <pubDate>Tue, 08 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Enthusiastic Hugo User</author>
+      <guid>http://tehbilly.com/hugo-example-blog/post/step-four-organizing-content</guid>
+      <description>
+
+&lt;p&gt;You&amp;rsquo;re merrily on your way to being a blog champion. Creating new content
+(which is just &lt;em&gt;gorgeous&lt;/em&gt; btw) and taking names. So before you have an entire
+&lt;a href=&#34;http://www.merriam-webster.com/dictionary/clowder&#34;&gt;clowder&lt;/a&gt; to herd, you may want to know how to keep it all organized!&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Indexes&lt;/h2&gt;
+
+&lt;p&gt;Indexes are ways to group and organize similar content. For example, in this
+blog there are two indexes defined: &lt;code&gt;categories&lt;/code&gt; and &lt;code&gt;tags&lt;/code&gt;. You can see them
+defined in &lt;code&gt;config.yaml&lt;/code&gt; and in the front matter of each post. The index
+display is controlled by files in &lt;code&gt;layout/indexes/category.html&lt;/code&gt; and
+&lt;code&gt;layout/indexes/tag.html&lt;/code&gt; respectively.&lt;/p&gt;
+
+&lt;p&gt;For a more thorough explanation of what indexes are and how to define custom
+ones you should take a look at the
+&lt;a href=&#34;http://hugo.spf13.com/indexes/overview&#34;&gt;Hugo documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since we&amp;rsquo;ve got a couple of commonly used indexes set up and ready to roll we
+won&amp;rsquo;t cover too much more here. But it&amp;rsquo;s important to know that they exist and
+how to use them, so at some point you should peruse the Hugo documentation to
+learn more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Step Five: Getting It Out THere</title>
+      <link>http://tehbilly.com/hugo-example-blog/post/step-five-building-and-deploying</link>
+      <pubDate>Mon, 07 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Enthusiastic Hugo User</author>
+      <guid>http://tehbilly.com/hugo-example-blog/post/step-five-building-and-deploying</guid>
+      <description>
+
+&lt;p&gt;So now you&amp;rsquo;ve got your content, organized it, and you&amp;rsquo;re ready to share it
+with the world. I suppose we can do something about that.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Building&lt;/h2&gt;
+
+&lt;p&gt;The most basic, but extremely useful, way to turn your source into a site is
+by running &lt;code&gt;hugo&lt;/code&gt; from the command line in the base of your project directory.
+This will create a new directory called &lt;code&gt;public&lt;/code&gt; that contains your generated
+HTML and static assets (things such as images, css, javascript).&lt;/p&gt;
+
+&lt;p&gt;There is also the &lt;code&gt;hugo server&lt;/code&gt; command &lt;em&gt;(we covered it earlier!)&lt;/em&gt; which will
+allow you to view your site at &lt;a href=&#34;http://localhost:1313&#34;&gt;hugo local&lt;/a&gt;, an invaluable asset for
+previewing your work without having to put it somewhere else first. It is
+highly recommended that you run the command as &lt;code&gt;hugo server -w&lt;/code&gt;, so that hugo
+will automatically rebuild your site when you make changes to the source.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Deploying&lt;/h2&gt;
+
+&lt;p&gt;One of the beautiful things about having a static site generated is that you
+don&amp;rsquo;t need much to host it. &lt;a href=&#34;https://pages.github.com&#34;&gt;GitHub Pages&lt;/a&gt; is a great option, so is
+&lt;a href=&#34;http://aws.amazon.com/s3/&#34;&gt;Amazon S3&lt;/a&gt;, or anywhere else that&amp;rsquo;ll provide serving of static
+content.&lt;/p&gt;
+
+&lt;p&gt;You are, of course, also free to serve the site on any existing server you
+have. If in doubt, call out to the nearest geek in your life for more help. We
+geeks generally enjoy helping people get going.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;GitHub Pages&lt;/h2&gt;
+
+&lt;p&gt;This option is straightforward, fast, and free. We&amp;rsquo;ll cover the few very basic
+steps needed to take this site you&amp;rsquo;ve lovingly crafted and share it with the
+world.&lt;/p&gt;
+
+&lt;p&gt;If you do not already have a GitHub account, sign up for one &lt;a href=&#34;https://github.com&#34;&gt;here&lt;/a&gt;.
+It&amp;rsquo;s free and you&amp;rsquo;ll be joining a wonderful community.&lt;/p&gt;
+
+&lt;p&gt;To create a user page you should create a new repository called
+&lt;code&gt;yourusername.github.io&lt;/code&gt; (be sure to replace &lt;code&gt;yourusername&lt;/code&gt; with your GitHub
+username). Follow the instructions provided to &lt;code&gt;clone&lt;/code&gt; this repository to your
+local computer. If you do not have one already, you should download a git
+client. GitHub has &lt;a href=&#34;https://windows.github.com&#34;&gt;windows&lt;/a&gt; and &lt;a href=&#34;https://mac.github.com&#34;&gt;mac&lt;/a&gt; clients readily
+available, which will allow you to sign in and immediately clone your
+repository.&lt;/p&gt;
+
+&lt;p&gt;Ensure that &lt;code&gt;config.yaml&lt;/code&gt; has &lt;code&gt;http://yourusername.github.io/&lt;/code&gt; as the &lt;code&gt;baseurl&lt;/code&gt;
+value, then build your site by running &lt;code&gt;hugo&lt;/code&gt;. You can now copy the contents
+of the &lt;code&gt;public&lt;/code&gt; directory to the base directory of the &lt;code&gt;yourusername.github.io&lt;/code&gt;
+project you cloned in the last step.&lt;/p&gt;
+
+&lt;p&gt;This step assumes you are using one of the GitHub clients, so the instructions
+may be slightly different if you are using a different client. From within the
+repository view of the GitHub client make sure all files are checked and enter
+a commit message. Commit your changes and then click the &lt;code&gt;sync&lt;/code&gt; button. This
+will add the files to your repository, then push them to GitHub.&lt;/p&gt;
+
+&lt;p&gt;Within a couple of minutes you should be able to visit
+&lt;code&gt;https://yourusername.github.io/&lt;/code&gt; and see your site! Give yourself a pat on the
+back and then head over to the &lt;a href=&#34;http://hugo.spf13.com/overview/introduction&#34;&gt;Hugo documentation&lt;/a&gt; to learn more.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Congratulations!&lt;/h2&gt;
+
+&lt;p&gt;You&amp;rsquo;ve now taken all of the steps needed to configure, create, maintain, and
+publish your own blog!&lt;/p&gt;
 </description>
     </item>
     

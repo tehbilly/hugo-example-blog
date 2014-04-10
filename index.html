@@ -9,12 +9,10 @@
     <meta name="author" content="A Hugo User"> 
 
     <title>Hugo Example Blog - http://tehbilly.com/hugo-example-blog/</title>
-    <link rel="canonical" href="http://tehbilly.com/">
     
     <link href="http://tehbilly.com/hugo-example-blog/css/bootstrap.css" rel="stylesheet">
     <link href="http://tehbilly.com/hugo-example-blog/css/font-awesome.css" rel="stylesheet">
     <link href="http://tehbilly.com/hugo-example-blog/css/custom.css" rel="stylesheet">
-    <link href="http://tehbilly.com/index.xml" rel="alternate" type="application/rss+xml" title="Hugo Example Blog" />
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -42,22 +40,52 @@
         
             <div class="well well-sm">
     <h4>
-        <a href="http://tehbilly.com/hugo-example-blog/post/another-post">Another Hugo Post</a> <small class="pull-right">Posted on Apr 9, 2014</small><br>
-        <small>Nothing special, but one post is boring.</small>
+        <a href="http://tehbilly.com/hugo-example-blog/post/step-one-hello-hugo">Step One: Hugo Introduction</a> <small class="pull-right">Posted on Apr 11, 2014</small><br>
+        <small>Meeting your new friend</small>
     </h4>
     <hr>
-    <p>TOML, YAML, JSON - Oh my! One of the nifty Hugo features we should cover: flexible configuration and front matter formats! This entry has front matter in toml, unlike the last one which used yaml, and json is also available if that&rsquo;s your preference. The toml front matter used on this entry: +++ title = &quot;Another Hugo Post&quot; description = &quot;Nothing special, but one post is boring.&quot; date = &quot;2014-04-09&quot; categories = [ &quot;example&quot;, &quot;configuration&quot; ] tags = [ &quot;example&quot;, &quot;hugo&quot;, &quot;toml&quot; ] +++ This flexibility also extends to your site&rsquo;s global configuration file.</p>
-    <a class="btn btn-primary btn-xs" href="http://tehbilly.com/hugo-example-blog/post/another-post">Read More <span class="fa fa-angle-double-right"></span></a>
+    <p>Hello! Hello from Hugo! If you&rsquo;re reading this in your browser, good job! The file content/post/step-one-hello-hugo.md has been converted into a complete html document by Hugo. Isn&rsquo;t that pretty nifty? What is Hugo? Hugo is a static site generator written in go. It is ideal for creating fast, seldom-changing sites. The program is portable and has zero dependencies, and the sites it generates are easy to publish. A common use case for static site generators has been making blogs.</p>
+    <a class="btn btn-primary btn-xs" href="http://tehbilly.com/hugo-example-blog/post/step-one-hello-hugo">Read More <span class="fa fa-angle-double-right"></span></a>
 </div>
         
             <div class="well well-sm">
     <h4>
-        <a href="http://tehbilly.com/hugo-example-blog/post/hello-hugo">Hello Hugo!</a> <small class="pull-right">Posted on Apr 8, 2014</small><br>
-        <small>Saying &#39;Hello&#39; from Hugo</small>
+        <a href="http://tehbilly.com/hugo-example-blog/post/step-two-site-configuration">Step Two: First Steps</a> <small class="pull-right">Posted on Apr 10, 2014</small><br>
+        <small>Who are you and where do we go from here?</small>
     </h4>
     <hr>
-    <p>Hello from Hugo! If you&rsquo;re reading this in your browser, good job! The file content/post/hello-hugo.md has been converted into a complete html document by Hugo. Isn&rsquo;t that pretty nifty? A Section Here&rsquo;s a simple titled section where you can place whatever information you want. You can use inline HTML if you want, but really there&rsquo;s not much that markdown can&rsquo;t do. Showing Off With Markdown A full cheat sheet can be found here or through google.</p>
-    <a class="btn btn-primary btn-xs" href="http://tehbilly.com/hugo-example-blog/post/hello-hugo">Read More <span class="fa fa-angle-double-right"></span></a>
+    <p>Configuration The first thing you&rsquo;ve got to do with your new site is configure it. You can do so by opening config.yaml in the base directory of the repository and changing a few variables. Here&rsquo;s the content of the provided config.yaml: --- baseurl: &quot;http://blog.hugoexample.com/&quot; title: &quot;Hugo Example Blog&quot; canonifyurls: true indexes: category: &quot;categories&quot; tag: &quot;tags&quot; --- At a minimum you&rsquo;ll want to change the value of baseurl and title, although you don&rsquo;t have to do so just yet.</p>
+    <a class="btn btn-primary btn-xs" href="http://tehbilly.com/hugo-example-blog/post/step-two-site-configuration">Read More <span class="fa fa-angle-double-right"></span></a>
+</div>
+        
+            <div class="well well-sm">
+    <h4>
+        <a href="http://tehbilly.com/hugo-example-blog/post/step-three-new-content">Step Three: Creating New Content</a> <small class="pull-right">Posted on Apr 9, 2014</small><br>
+        <small>How to add new posts to your blog</small>
+    </h4>
+    <hr>
+    <p>So all of that is really wonderful, but I know why you&rsquo;re here. You want to create your own content, right? This post will walk you through doing exactly that. Creating The File Take your favorite text editor and create a new file at content/post/my-first-post.md. Inside of there you&rsquo;ll want to define the properties of your post. First, paste the following at the very top of the file: --- title: &quot;Post Title&quot; description: &quot;This is a description&quot; date: &quot;2014-04-12&quot; categories: - &quot;tutorial&quot; tags: - &quot;example&quot; - &quot;hugo&quot; - &quot;blog&quot; - &quot;custom&quot; --- This defines your post.</p>
+    <a class="btn btn-primary btn-xs" href="http://tehbilly.com/hugo-example-blog/post/step-three-new-content">Read More <span class="fa fa-angle-double-right"></span></a>
+</div>
+        
+            <div class="well well-sm">
+    <h4>
+        <a href="http://tehbilly.com/hugo-example-blog/post/step-four-organizing-content">Step Four: Organizing Content</a> <small class="pull-right">Posted on Apr 8, 2014</small><br>
+        <small>Indexes? Okay.</small>
+    </h4>
+    <hr>
+    <p>You&rsquo;re merrily on your way to being a blog champion. Creating new content (which is just gorgeous btw) and taking names. So before you have an entire clowder to herd, you may want to know how to keep it all organized! Indexes Indexes are ways to group and organize similar content. For example, in this blog there are two indexes defined: categories and tags. You can see them defined in config.yaml and in the front matter of each post.</p>
+    <a class="btn btn-primary btn-xs" href="http://tehbilly.com/hugo-example-blog/post/step-four-organizing-content">Read More <span class="fa fa-angle-double-right"></span></a>
+</div>
+        
+            <div class="well well-sm">
+    <h4>
+        <a href="http://tehbilly.com/hugo-example-blog/post/step-five-building-and-deploying">Step Five: Getting It Out THere</a> <small class="pull-right">Posted on Apr 7, 2014</small><br>
+        <small>How to build and publish your site</small>
+    </h4>
+    <hr>
+    <p>So now you&rsquo;ve got your content, organized it, and you&rsquo;re ready to share it with the world. I suppose we can do something about that. Building The most basic, but extremely useful, way to turn your source into a site is by running hugo from the command line in the base of your project directory. This will create a new directory called public that contains your generated HTML and static assets (things such as images, css, javascript).</p>
+    <a class="btn btn-primary btn-xs" href="http://tehbilly.com/hugo-example-blog/post/step-five-building-and-deploying">Read More <span class="fa fa-angle-double-right"></span></a>
 </div>
         
         </div>

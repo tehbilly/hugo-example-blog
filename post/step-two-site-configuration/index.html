@@ -5,16 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saying &#39;Hello&#39; from Hugo">
+    <meta name="description" content="Who are you and where do we go from here?">
     <meta name="author" content="A Hugo User"> 
 
-    <title>Hello Hugo! - http://tehbilly.com/hugo-example-blog/</title>
-    <link rel="canonical" href="http://tehbilly.com/hugo-example-blog/post/hello-hugo">
+    <title>Step Two: First Steps - http://tehbilly.com/hugo-example-blog/</title>
     
     <link href="http://tehbilly.com/hugo-example-blog/css/bootstrap.css" rel="stylesheet">
     <link href="http://tehbilly.com/hugo-example-blog/css/font-awesome.css" rel="stylesheet">
     <link href="http://tehbilly.com/hugo-example-blog/css/custom.css" rel="stylesheet">
-    
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -40,74 +38,76 @@
     <div class="row">
         <div class="col-md-9">
             <div class="well well-sm">
-                    <h3>Hello Hugo!<br> <small>Saying &#39;Hello&#39; from Hugo</small></h3>
+                    <h3>Step Two: First Steps<br> <small>Who are you and where do we go from here?</small></h3>
                     <hr>
                     
 
-<p>Hello from Hugo! If you&rsquo;re reading this in your browser, good job! The file <code>content/post/hello-hugo.md</code> has been
-converted into a complete html document by Hugo. Isn&rsquo;t that pretty nifty?</p>
+<h2 id="toc_0">Configuration</h2>
 
-<h2 id="toc_0">A Section</h2>
+<p>The first thing you&rsquo;ve got to do with your new site is <em>configure</em> it. You can
+do so by opening <code>config.yaml</code> in the base directory of the repository and
+changing a few variables. Here&rsquo;s the content of the provided <code>config.yaml</code>:</p>
 
-<p>Here&rsquo;s a simple titled section where you can place whatever information you want.</p>
-
-<p>You can use inline HTML if you want, but really there&rsquo;s not much that markdown can&rsquo;t do.</p>
-
-<h2 id="toc_1">Showing Off With Markdown</h2>
-
-<p>A full cheat sheet can be found <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">here</a>
-or through <a href="https://google.com/">google</a>.</p>
-
-<p>There are some <em>easy</em> examples for styling, though. I can&rsquo;t <strong>emphasize</strong> that enough.
-Creating <a href="https://google.com/">links</a> or <code>inline code</code> blocks are very straightforward.</p>
-
-<pre><code>There are some *easy* examples for styling, though. I can't **emphasize** that enough.
-Creating [links](https://google.com/) or `inline code` blocks are very straightforward.
-</code></pre>
-
-<h2 id="toc_2">Front Matter For Fun</h2>
-
-<p>This is the meta data for this post. It is located at the top of the <code>content/post/hello-hugo.md</code> markdown file.</p>
-
-<pre><code>---
-title: &quot;Hello Hugo!&quot;
-description: &quot;Saying 'Hello' from Hugo&quot;
-date: &quot;2014-04-09&quot;
-categories:
-  - &quot;example&quot;
-  - &quot;hello&quot;
-tags:
-  - &quot;example&quot;
-  - &quot;hugo&quot;
-  - &quot;blog&quot;
+<pre><code class="yaml">---
+baseurl: &quot;http://blog.hugoexample.com/&quot;
+title: &quot;Hugo Example Blog&quot;
+canonifyurls: true
+indexes:
+  category: &quot;categories&quot;
+  tag: &quot;tags&quot;
 ---
 </code></pre>
 
-<p>This section, called &lsquo;Front Matter&rsquo;, is what tells Hugo about the content in this file. The title of the item,the
-description, the date it was posted. In our example we&rsquo;re adding two custom bits of data, too. The <code>categories</code> and
-<code>tags</code> sections are used in this example for indexing/grouping content. You will learn more about what that means by
-examining the code in this example and through reading the Hugo <a href="http://hugo.spf13.com/overview/introduction">documentation</a></p>
+<p>At a minimum you&rsquo;ll want to change the value of <code>baseurl</code> and <code>title</code>, although
+you don&rsquo;t have to do so just yet. Later on in this series we&rsquo;ll instruct you to
+change these values before you deploy, however you should understand that the
+configuration file is an extremely important part of your site.</p>
 
+<p>Take a minute to glance over the Hugo documentation on
+<a href="http://hugo.spf13.com/overview/configuration">configuration</a> before the next step.</p>
+
+<h2 id="toc_1">Running and Viewing the Site</h2>
+
+<p>Since you installed Hugo in the first step <em>(you did install it, didn&rsquo;t you?)</em>
+you should get Hugo running in server mode so you can view changes to the
+site as you make them. From a command line navigate to the base directory of
+this repository and run <code>hugo server -w</code>. This will start Hugo in server mode
+and rebuild the site whenever you make changes.</p>
+
+<p>Go ahead, try it out! When it&rsquo;s running you can visit [<a href="http://localhost:1313](">http://localhost:1313](</a>)
+to see your copy of the site.</p>
+
+<p>Whenever you&rsquo;re following along with this example, or you&rsquo;re working on your
+site in the future, it&rsquo;s recommended you use Hugo&rsquo;s server mode to get fast
+feedback on what you&rsquo;re doing.</p>
+
+            </div>
+            <div class="well well-sm">
+                
+                <a class="btn btn-primary btn-xs" href="http://tehbilly.com/hugo-example-blog/post/step-one-hello-hugo"><span class="fa fa-angle-double-left"></span> Step One: Hugo Introduction</a>
+                
+
+                
+                <a class="btn btn-primary btn-xs" href="http://tehbilly.com/hugo-example-blog/post/step-three-new-content">Step Three: Creating New Content <span class="fa fa-angle-double-right"></span></a>
+                
             </div>
         </div>
 
         
         <div class="col-md-3">
             <div class="well well-sm"> 
-                <h4>April 8, 2014<br>
-                <small>238 words</small></h4>
+                <h4>April 10, 2014<br>
+                <small>245 words</small></h4>
                 <hr>
                 <strong>Categories</strong>
                 <ul class="list-unstyled">
                 
-                    <li><a href="http://tehbilly.com/hugo-example-blog/categories/example">example</a></li>
-                
-                    <li><a href="http://tehbilly.com/hugo-example-blog/categories/hello">hello</a></li>
+                    <li><a href="http://tehbilly.com/hugo-example-blog/categories/tutorial">tutorial</a></li>
                 
                 </ul>
                 <hr>
                 <strong>Tags</strong><br>
-                <a class="label label-default" href="http://tehbilly.com/hugo-example-blog/tags/example">example</a> <a class="label label-default" href="http://tehbilly.com/hugo-example-blog/tags/hugo">hugo</a> <a class="label label-default" href="http://tehbilly.com/hugo-example-blog/tags/blog">blog</a> 
+                <a class="label label-default" href="http://tehbilly.com/hugo-example-blog/tags/hugo">hugo</a> <a class="label label-default" href="http://tehbilly.com/hugo-example-blog/tags/blog">blog</a> 
             </div>
                 <div class="panel panel-default">
         <div class="panel-heading" style="padding: 2px 15px;">

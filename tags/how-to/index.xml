@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>How-To on Hugo Example Blog </title>
+    <link>http://tehbilly.com/hugo-example-blog/tags/how-to/index.xml</link>
+    <language>en-US</language>
+    <author>Enthusiastic Hugo User</author>
+    <rights>Copyright (c) 2014, Enthusiastic Hugo User; all rights reserved.</rights>
+    <updated>Wed, 09 Apr 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Step Three: Creating New Content</title>
+      <link>http://tehbilly.com/hugo-example-blog/post/step-three-new-content</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Enthusiastic Hugo User</author>
+      <guid>http://tehbilly.com/hugo-example-blog/post/step-three-new-content</guid>
+      <description>
+
+&lt;p&gt;So all of that is really wonderful, but I know why you&amp;rsquo;re here. You want to
+create your &lt;em&gt;own&lt;/em&gt; content, right? This post will walk you through doing
+exactly that.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Creating The File&lt;/h2&gt;
+
+&lt;p&gt;Take your favorite text editor and create a new file at
+&lt;code&gt;content/post/my-first-post.md&lt;/code&gt;. Inside of there you&amp;rsquo;ll want to define the
+properties of your post. First, paste the following at the very top of the
+file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;yaml&#34;&gt;---
+title: &amp;quot;Post Title&amp;quot;
+description: &amp;quot;This is a description&amp;quot;
+date: &amp;quot;2014-04-12&amp;quot;
+categories:
+  - &amp;quot;tutorial&amp;quot;
+tags:
+  - &amp;quot;example&amp;quot;
+  - &amp;quot;hugo&amp;quot;
+  - &amp;quot;blog&amp;quot;
+  - &amp;quot;custom&amp;quot;
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This defines your post. How links are formatted, where it&amp;rsquo;s placed, what it&amp;rsquo;s
+related to; everything is defined in those few lines of &lt;a href=&#34;http://hugo.spf13.com/content/front-matter&#34;&gt;front matter&lt;/a&gt;. None
+of this is included in your final page, it is only used by hugo at build time
+to generate the final pages properly. Most of these should be pretty self
+explanatory, so modify the values as you see fit and let&amp;rsquo;s get to writing the
+content!&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Adding Some Meat&lt;/h2&gt;
+
+&lt;p&gt;Below the front matter you can start writing your post however you see fit.
+You can use plain text, which will be plain but perfectly readable. You
+&lt;em&gt;ideally&lt;/em&gt; will use &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;markdown&lt;/a&gt; to write your content as it is concise,
+expressive, and Hugo will generate gorgeous HTML from it.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Bask&lt;/h2&gt;
+
+&lt;p&gt;Save your file and point your browser to [&lt;a href=&#34;http://localhost:1313](&#34;&gt;http://localhost:1313](&lt;/a&gt;) &lt;em&gt;(assuming
+you still have Hugo running in server mode)&lt;/em&gt;. Your post should appear at the
+top of the index! Click on it to see the content view. Browse around the
+categories and tags to see how it&amp;rsquo;s been added to those. No muss, no fuss.&lt;/p&gt;
+
+&lt;p&gt;Continue adding to your new post and playing around with it. Create two or
+three more posts of different types and have a blast. There&amp;rsquo;s no time limit or
+anything, knock yourself out. This &lt;em&gt;is&lt;/em&gt; why you&amp;rsquo;re here!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Indexes on Hugo Example Blog </title>
+    <link>http://tehbilly.com/hugo-example-blog/tags/indexes/index.xml</link>
+    <language>en-US</language>
+    <author>Enthusiastic Hugo User</author>
+    <rights>Copyright (c) 2014, Enthusiastic Hugo User; all rights reserved.</rights>
+    <updated>Tue, 08 Apr 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Step Four: Organizing Content</title>
+      <link>http://tehbilly.com/hugo-example-blog/post/step-four-organizing-content</link>
+      <pubDate>Tue, 08 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Enthusiastic Hugo User</author>
+      <guid>http://tehbilly.com/hugo-example-blog/post/step-four-organizing-content</guid>
+      <description>
+
+&lt;p&gt;You&amp;rsquo;re merrily on your way to being a blog champion. Creating new content
+(which is just &lt;em&gt;gorgeous&lt;/em&gt; btw) and taking names. So before you have an entire
+&lt;a href=&#34;http://www.merriam-webster.com/dictionary/clowder&#34;&gt;clowder&lt;/a&gt; to herd, you may want to know how to keep it all organized!&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Indexes&lt;/h2&gt;
+
+&lt;p&gt;Indexes are ways to group and organize similar content. For example, in this
+blog there are two indexes defined: &lt;code&gt;categories&lt;/code&gt; and &lt;code&gt;tags&lt;/code&gt;. You can see them
+defined in &lt;code&gt;config.yaml&lt;/code&gt; and in the front matter of each post. The index
+display is controlled by files in &lt;code&gt;layout/indexes/category.html&lt;/code&gt; and
+&lt;code&gt;layout/indexes/tag.html&lt;/code&gt; respectively.&lt;/p&gt;
+
+&lt;p&gt;For a more thorough explanation of what indexes are and how to define custom
+ones you should take a look at the
+&lt;a href=&#34;http://hugo.spf13.com/indexes/overview&#34;&gt;Hugo documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since we&amp;rsquo;ve got a couple of commonly used indexes set up and ready to roll we
+won&amp;rsquo;t cover too much more here. But it&amp;rsquo;s important to know that they exist and
+how to use them, so at some point you should peruse the Hugo documentation to
+learn more.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

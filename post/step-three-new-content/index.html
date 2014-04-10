@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How to add new posts to your blog">
+    <meta name="author" content="A Hugo User"> 
+
+    <title>Step Three: Creating New Content - http://tehbilly.com/hugo-example-blog/</title>
+    
+    <link href="http://tehbilly.com/hugo-example-blog/css/bootstrap.css" rel="stylesheet">
+    <link href="http://tehbilly.com/hugo-example-blog/css/font-awesome.css" rel="stylesheet">
+    <link href="http://tehbilly.com/hugo-example-blog/css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://tehbilly.com/hugo-example-blog/">Hugo Example Blog</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://tehbilly.com/hugo-example-blog/post/">Post Index</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="well well-sm">
+                    <h3>Step Three: Creating New Content<br> <small>How to add new posts to your blog</small></h3>
+                    <hr>
+                    
+
+<p>So all of that is really wonderful, but I know why you&rsquo;re here. You want to
+create your <em>own</em> content, right? This post will walk you through doing
+exactly that.</p>
+
+<h2 id="toc_0">Creating The File</h2>
+
+<p>Take your favorite text editor and create a new file at
+<code>content/post/my-first-post.md</code>. Inside of there you&rsquo;ll want to define the
+properties of your post. First, paste the following at the very top of the
+file:</p>
+
+<pre><code class="yaml">---
+title: &quot;Post Title&quot;
+description: &quot;This is a description&quot;
+date: &quot;2014-04-12&quot;
+categories:
+  - &quot;tutorial&quot;
+tags:
+  - &quot;example&quot;
+  - &quot;hugo&quot;
+  - &quot;blog&quot;
+  - &quot;custom&quot;
+---
+</code></pre>
+
+<p>This defines your post. How links are formatted, where it&rsquo;s placed, what it&rsquo;s
+related to; everything is defined in those few lines of <a href="http://hugo.spf13.com/content/front-matter">front matter</a>. None
+of this is included in your final page, it is only used by hugo at build time
+to generate the final pages properly. Most of these should be pretty self
+explanatory, so modify the values as you see fit and let&rsquo;s get to writing the
+content!</p>
+
+<h2 id="toc_1">Adding Some Meat</h2>
+
+<p>Below the front matter you can start writing your post however you see fit.
+You can use plain text, which will be plain but perfectly readable. You
+<em>ideally</em> will use <a href="http://daringfireball.net/projects/markdown/">markdown</a> to write your content as it is concise,
+expressive, and Hugo will generate gorgeous HTML from it.</p>
+
+<h2 id="toc_2">Bask</h2>
+
+<p>Save your file and point your browser to [<a href="http://localhost:1313](">http://localhost:1313](</a>) <em>(assuming
+you still have Hugo running in server mode)</em>. Your post should appear at the
+top of the index! Click on it to see the content view. Browse around the
+categories and tags to see how it&rsquo;s been added to those. No muss, no fuss.</p>
+
+<p>Continue adding to your new post and playing around with it. Create two or
+three more posts of different types and have a blast. There&rsquo;s no time limit or
+anything, knock yourself out. This <em>is</em> why you&rsquo;re here!</p>
+
+            </div>
+            <div class="well well-sm">
+                
+                <a class="btn btn-primary btn-xs" href="http://tehbilly.com/hugo-example-blog/post/step-two-site-configuration"><span class="fa fa-angle-double-left"></span> Step Two: First Steps</a>
+                
+
+                
+                <a class="btn btn-primary btn-xs" href="http://tehbilly.com/hugo-example-blog/post/step-four-organizing-content">Step Four: Organizing Content <span class="fa fa-angle-double-right"></span></a>
+                
+            </div>
+        </div>
+
+        
+        <div class="col-md-3">
+            <div class="well well-sm"> 
+                <h4>April 9, 2014<br>
+                <small>308 words</small></h4>
+                <hr>
+                <strong>Categories</strong>
+                <ul class="list-unstyled">
+                
+                    <li><a href="http://tehbilly.com/hugo-example-blog/categories/tutorial">tutorial</a></li>
+                
+                </ul>
+                <hr>
+                <strong>Tags</strong><br>
+                <a class="label label-default" href="http://tehbilly.com/hugo-example-blog/tags/hugo">hugo</a> <a class="label label-default" href="http://tehbilly.com/hugo-example-blog/tags/blog">blog</a> <a class="label label-default" href="http://tehbilly.com/hugo-example-blog/tags/how-to">how-to</a> 
+            </div>
+                <div class="panel panel-default">
+        <div class="panel-heading" style="padding: 2px 15px;">
+            <h4>Connect. Socialize.</h4>
+        </div>
+        <div class="panel-body">
+            <a href="https://github.com/SomeSillyUserNameHere/" class="btn btn-primary btn-xs"><i class="fa fa-github-square fa-2x"></i></a>
+            <a href="https://www.facebook.com/SomeSillyUserNameHere" class="btn btn-info btn-xs"><i class="fa fa-facebook-square fa-2x"></i></a>
+
+            <div class="alert alert-info alert-dismissable" style="margin-top:25px;margin-bottom:5px;">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Hey, listen!</strong><br>
+                You should modify the <code>layouts/chrome/menu.html</code> template and include your own profile links.
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+        <footer>
+            <div class="row">
+                <hr>
+                <div class="col-sm-12">
+                    <p>&copy; Enthusiastic Hugo User 2014<br>
+                    Built with <a href="https://github.com/spf13/hugo">Hugo</a></p>
+                </div>
+            </div>
+        </footer>
+</div>
+
+    <script src="http://tehbilly.com/hugo-example-blog/js/jquery.js"></script>
+    <script src="http://tehbilly.com/hugo-example-blog/js/bootstrap.js"></script>
+</body>
+</html>
