@@ -9,6 +9,15 @@
                     <hr>
                     {{ .Content }}
             </div>
+            <div class="well well-sm">
+                {{ with .Prev }}
+                <a class="btn btn-primary btn-xs" href="{{ .Permalink }}"><span class="fa fa-angle-double-left"></span> {{ .Title }}</a>
+                {{ end }}
+
+                {{ with .Next }}
+                <a class="btn btn-primary btn-xs" href="{{ .Permalink }}">{{ .Title }} <span class="fa fa-angle-double-right"></span></a>
+                {{ end }}
+            </div>
         </div>
 
         <!-- Sidebar -->
